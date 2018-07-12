@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <f:facet name="first">
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </f:facet>
+        <title><ui:insert name="titulo">Sistema de Gestão de Empresas - A Lógica Sistemas</ui:insert></title>
+
+        <h:outputStylesheet library="a_logica" name="styles/custom.css" />
+        <h:outputStylesheet library="a_logica" name="styles/layout.css" />
+        <h:outputStylesheet library="a_logica" name="styles/components.css" />
+
+        <h:outputScript target="body" library="primefaces" name="jquery/jquery.js" /> 
+        <h:outputScript target="body" library="a_logica" name="javascripts/app.js" />
+    </h:head>
+
+    <h:body>
+        <p:ajaxStatus styleClass="ajax-status">
+            <f:facet name="start">
+                <h:graphicImage library="a_logica" name="images/loading.gif"/>
+            </f:facet>
+            <f:facet name="complete">
+                <h:outputText value=""/>
+            </f:facet>
+        </p:ajaxStatus>
+        <header class="aw-topbar">
+            <h:graphicImage library="a_logica" name="images/logo.png" />
+            <span style="margin-left: 30%; font-family: Arial; font-size: 20px; font-weight: bold; color: lightcyan" >Sistema de Gestão de Empresa [SGE-A]</span>
+            <a href="#" class="aw-toggle  js-toggle"><i class="fa  fa-bars"></i></a>
+        </header>
+
+        <aside class="aw-sidebar  js-sidebar">
+            <ui:include src="Menu.xhtml" />
+        </aside>
+
+        <section class="aw-content  js-content">
+            <ui:insert name="content" />
+        </section> 
+
+    </h:body>
+
+    <p:separator style="margin-top: 20px"/>
+
+    <footer>
+        <section class="aw-footer js-footer">
+        SGE-A - Sistema de Gestão de Empresas - Copyright &#169; A-Lógica-Sistemas - 2018
+        <a href="http://a-logica-sistemas.000webhostapp.com/" target="_blank">www.a-logica-sistemas.com.br</a>
+        </section>
+    </footer>
+</html>

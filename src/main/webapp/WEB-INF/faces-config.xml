@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.1"
+              xmlns="http://java.sun.com/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd">
+
+    <application>
+        <locale-config>
+            <default-locale>pt_BR</default-locale>
+        </locale-config>
+    </application>
+
+    <lifecycle>
+        <phase-listener>br.com.alogica.util.PhaseListener_a_logica</phase-listener>
+    </lifecycle>
+    <managed-bean>
+        <manage-bean-name>now</manage-bean-name>
+        <manage-bean-class>java.util.Date</manage-bean-class>
+        <manage-bean-scope>request</manage-bean-scope>
+    </managed-bean>
+    
+</faces-config>

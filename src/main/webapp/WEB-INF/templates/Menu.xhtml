@@ -1,0 +1,20 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui">
+
+    <h:form>
+            <p:growl id="messages" showDetail="false"/>
+            <p:menu toggleable="true" style="width: 98%">
+                <p:submenu label="Arquivo">
+                    <p:menuitem value="Página Inicial" outcome="/Inicio.xthml" icon="ui-icon-home" style="width: 210px;"/>
+                </p:submenu>
+                <p:submenu label="Cadastros">
+                    <p:menuitem value="Usuários" outcome="/restrict/cadUsuario.xhtml" icon="ui-icon-bullet" style="width: 210px"/>
+                </p:submenu> 
+                <p:submenu label="Relatórios">
+                </p:submenu>
+            </p:menu>
+    </h:form>     
+
+</ui:composition>
