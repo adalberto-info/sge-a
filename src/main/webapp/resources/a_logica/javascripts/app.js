@@ -5,9 +5,4 @@ $(function() {
 	});	
 });
 
-$("#zoom_lente").elevateZoom({
-  zoomType : "lens",
-  lensShape : "round",
-  lensSize : 200
-});
 

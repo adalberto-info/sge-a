@@ -11,7 +11,7 @@
     </application>
 
     <lifecycle>
-        <phase-listener>br.com.alogica.util.PhaseListener_a_logica</phase-listener>
+        <phase-listener>br.com.a_logica.util.PhaseListener_a_logica</phase-listener>
     </lifecycle>
     <managed-bean>
         <manage-bean-name>now</manage-bean-name>

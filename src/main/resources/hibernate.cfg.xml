@@ -35,6 +35,8 @@ dt. criação: 11/07/2018
         <property name="c3p0.idle_test_period">300</property>
         
         <!-- LISTA DE ENTIDADES -->
+        <mapping class="br.com.a_logica.model.entities.Filial"/>  
+        <mapping class="br.com.a_logica.model.entities.Uf"/>  
         <mapping class="br.com.a_logica.model.entities.Usuario"/>  
     </session-factory>
 </hibernate-configuration>
